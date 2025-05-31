@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="system_default">システムデフォルト</string>
+    <string name="system_default">システムのデフォルト</string>
     <!-- Header -->
     <string name="header_title">Tricky Addon</string>
     <!-- Help Menu-->
@@ -12,17 +12,17 @@
     <string name="help_select_deselect">すべてを選択と解除</string>
     <string name="help_select_description">現在のインターフェースのすべてのアプリを選択または解除します。</string>
     <string name="help_select_denylist">DenyList から選択</string>
-    <string name="help_select_denylist_description">Magisk の環境でのみ使用可能です。Deny List 内のアプリを選択します(推奨)。</string>
+    <string name="help_select_denylist_description">Magisk の環境でのみ使用可能です。DenyList 内のアプリを選択します(推奨)。</string>
     <string name="help_deselect_unnecessary">不要な選択を解除</string>
     <string name="help_deselect_unnecessary_description">不要なカテゴリー: Xposed モジュール、root マネージャー、root 関連アプリ、Bootloader の状態を確認しない一般的なアプリです。このオプションはインターネット接続が必要です。</string>
     <string name="help_add_system_app">システムアプリを追加</string>
     <string name="help_add_system_app_description">特定のシステムアプリをアプリリストに追加します。</string>
-    <string name="help_set_keybox">AOSP と 有効な Keybox</string>
+    <string name="help_set_keybox">AOSP と有効な Keybox</string>
     <string name="help_set_keybox_description">Tricky Store の keybox.xml を置き換えます。有効な Keybox がなくなった場合は、AOSP Keybox に置き換えられます。インターネット接続が必要です。</string>
     <string name="help_set_custom_keybox">カスタム Keybox を設定</string>
-    <string name="help_set_custom_keybox_description">デバイスのストレージからカスタム Keybox ファイルをインポートします。xml ファイルのみ対応。</string>
+    <string name="help_set_custom_keybox_description">デバイスのストレージからカスタム Keybox ファイルをインポートします。インポートは xml ファイルのみ対応しています。</string>
     <string name="help_set_security_patch">セキュリティパッチを設定</string>
-    <string name="help_set_security_patch_description">カスタムセキュリティパッチの設定。自動設定は PIF モジュールのセキュリティパッチを使用します。空白のまま保存すると自動設定を無効にします。</string>
+    <string name="help_set_security_patch_description">カスタムセキュリティパッチの設定です。自動設定は PIF モジュールのセキュリティパッチを使用します。空白のまま保存すると自動設定を無効にします。</string>
     <string name="help_set_verified_boot_hash">確認付きブートハッシュを設定</string>
     <string name="help_set_verified_boot_hash_description">Key Attestation Demo から確認付きブートハッシュの値を取得します。ro.boot.vbmeta.digest をリセットして異常なブート状態を修正します。</string>
     <!-- Update -->
@@ -102,6 +102,7 @@
     <string name="security_patch_fetching">取得中...</string>
     <string name="security_patch_fetched">完了</string>
     <string name="security_patch_get_failed">セキュリティパッチの日付を取得できませんでした</string>
+    <string name="security_patch_unable_to_connect">source.android.com に接続できません</string>
     <string name="security_patch_auto_success">自動設定が有効化されました</string>
     <string name="security_patch_auto_failed">自動設定が有効化できませんでした</string>
     <string name="security_patch_save_success">セキュリティパッチが正常に保存されました</string>
@@ -116,8 +117,8 @@
     <string name="add_system_app_add">追加</string>
     <string name="add_system_app_current_list">現在のシステムアプリリスト</string>
     <!-- Uninstall confirmation -->
-    <string name="confirmation_uninstall_title">アンインストールの確認</string>
-    <string name="confirmation_uninstall_message">Tricky Addonをアンインストールしてもよろしいですか</string>
+    <string name="confirmation_uninstall_title">アンインストールしますか？</string>
+    <string name="confirmation_uninstall_message">Tricky Addon をアンインストールしてもよろしいですか</string>
     <string name="confirmation_uninstall_cancel">キャンセル</string>
     <string name="confirmation_uninstall_confirm">確認</string>
 </resources>
