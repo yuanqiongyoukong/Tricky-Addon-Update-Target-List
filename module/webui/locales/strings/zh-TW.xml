@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="system_default">系統預設</string>
+    <string name="more_language">更多</string>
     <!-- Header -->
     <string name="header_title">TS 插件</string>
     <!-- Help Menu-->
