@@ -76,8 +76,9 @@ jobs:
           MODULE_VERSION=$(grep '^version=' module/module.prop | sed 's/version=//')
           COMMIT_NUM=$(git rev-list --count HEAD)
           BUILD_COUNT=${{ github.run_number }}
-          ARTIFACT_NAME="TrickyAddonModule-${MODULE_VERSION}-${COMMIT_NUM}${BUILD_COUNT}-canary"
+          ARTIFACT_NAME="TrickyAddonModule-${MODULE_VERSION}-${COMMIT_NUM}-canary"
           sed -i "s/^version=.*/& (${COMMIT_NUM}${BUILD_COUNT}-canary)/" module/module.prop
+          sed -i "s/^versionCode=.*/versionCode=${COMMIT_NUM}/" module/module.prop
           echo "MODULE_VERSION=${MODULE_VERSION}" >> $GITHUB_ENV
           echo "ARTIFACT_NAME=${ARTIFACT_NAME}" >> $GITHUB_ENV
           echo "VERSION=${MODULE_VERSION}" >> $GITHUB_ENV
