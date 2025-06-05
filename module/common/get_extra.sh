@@ -56,7 +56,9 @@ check_update() {
     [ -f "$MODDIR/disable" ] && rm -f "$MODDIR/disable"
     LOCAL_VERSION=$(grep '^versionCode=' "$MODPATH/update/module.prop" | awk -F= '{print $2}')
     if [ "$REMOTE_VERSION" -gt "$LOCAL_VERSION" ] && [ ! -f "/data/adb/modules/TA_utl/update" ]; then
-        if [ "$MAGISK" = "true" ]; then
+        if [ "$CANARY" = "true" ]; then
+            exit 1
+        elif [ "$MAGISK" = "true" ]; then
             [ -d "/data/adb/modules/TA_utl" ] && rm -rf "/data/adb/modules/TA_utl"
             cp -rf "$MODPATH/update" "/data/adb/modules/TA_utl"
         else
