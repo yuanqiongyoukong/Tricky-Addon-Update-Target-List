@@ -53,7 +53,9 @@
 }
 
 .link-icon {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: bold;
+    min-height: calc(1em + 15px);
     padding: 3px 10px;
     color: #fff;
     fill: #fff;
@@ -65,10 +67,10 @@
     box-sizing: border-box;
     margin-bottom: 5px;
     transition: background-color 0.2s ease;
-}
 
-.link-icon svg {
-    padding-right: 3px;
+    svg {
+        padding-right: 3px;
+    }
 }
 
 #telegram {
@@ -81,9 +83,4 @@
 
 #canary {
     background-color: #821284;
-}
-
-#link-text {
-    font-size: 17px;
-    font-weight: bold;
 }
