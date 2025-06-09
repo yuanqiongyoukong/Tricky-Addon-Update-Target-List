@@ -18,9 +18,9 @@ manual_download() {
 download() {
     PATH=/data/adb/magisk:/data/data/com.termux/files/usr/bin:$PATH
     if command -v curl >/dev/null 2>&1; then
-        timeout 10 curl -Ls "$1"
+        curl --connect-timeout 10 -Ls "$1"
     else
-        timeout 10 busybox wget --no-check-certificate -qO- "$1"
+        busybox wget -T 10 --no-check-certificate -qO- "$1"
     fi
     PATH="$ORG_PATH"
 }
