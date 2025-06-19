@@ -1,0 +1,57 @@
+#module-version,
+#title {
+    padding-left: unset;
+    padding-right: 5px;
+}
+
+.language-dropdown {
+    margin-left: unset;
+    margin-right: auto;
+}
+
+.language-menu {
+    right: unset;
+    left: 5px;
+    transform-origin: top left;
+}
+
+.close-btn {
+    right: unset;
+    left: 12px;
+}
+
+.search-icon {
+    left: unset;
+    right: 15px;
+}
+
+.search-card {
+    left: unset;
+    right: 0;
+}
+
+.menu {
+    right: unset;
+    left: 0;
+}
+
+.menu-options {
+    right: unset;
+    left: 0;
+    transform: translateX(-120%);
+}
+
+.app-icon-container {
+    margin-right: unset;
+    margin-left: 10px;
+}
+
+.link-icon svg {
+    padding-right: unset;
+    padding-left: 3px;
+}
+
+.file-item svg {
+    margin-right: unset;
+    margin-left: 10px;
+}

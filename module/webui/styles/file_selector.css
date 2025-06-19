@@ -71,12 +71,12 @@
     position: relative;
     overflow: hidden;
     user-select: none;
-}
 
-.file-item svg {
-    flex-shrink: 0;
-    margin-right: 10px;
-    fill: var(--text-secondary);
+    svg {
+        flex-shrink: 0;
+        margin-right: 10px;
+        fill: var(--text-secondary);
+    }
 }
 
 .file-item span {

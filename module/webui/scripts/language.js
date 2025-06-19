@@ -4,6 +4,17 @@ const languageButton = document.querySelector('.language-button');
 const languageMenu = document.querySelector('.language-menu');
 const languageOptions = document.querySelectorAll('.language-option');
 const languageOverlay = document.getElementById('language-overlay');
+const rtlLang = [
+  'ar',  // Arabic
+  'fa',  // Persian
+  'he',  // Hebrew
+  'ur',  // Urdu
+  'ps',  // Pashto
+  'sd',  // Sindhi
+  'ku',  // Kurdish
+  'yi',  // Yiddish
+  'dv',  // Dhivehi
+];
 
 export let translations = {};
 let baseTranslations = {};
@@ -88,6 +99,25 @@ export async function loadTranslations() {
             translations = baseTranslations;
         }
 
+        // Support for rtl language
+        const isRTL = rtlLang.includes(lang.split('-')[0]);
+        if (isRTL) {
+            document.documentElement.setAttribute('dir', 'rtl');
+            document.documentElement.setAttribute('lang', lang);
+            
+            // Load extra rtl css
+            fetch('styles/rtl_styles.css')
+                .then(res => res.text())
+                .then(css => {
+                    const style = document.createElement('style');
+                    style.textContent = css;
+                    document.head.appendChild(style);
+                });
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+            document.documentElement.setAttribute('lang', lang);
+        }
+
         // Generate language menu
         await generateLanguageMenu();
     } catch (error) {
@@ -155,10 +185,10 @@ export function setupLanguageMenu() {
     languageMenu.addEventListener("click", async (e) => {
         if (e.target.classList.contains("language-option")) {
             const lang = e.target.getAttribute("data-lang");
-            localStorage.setItem('trickyAddonLanguage', lang);
-            closeLanguageMenu();
-            await new Promise(resolve => setTimeout(resolve, 200));
-            loadTranslations();
+            if (lang) {
+                localStorage.setItem('trickyAddonLanguage', lang);
+                window.location.reload();
+            }
         }
     });
 }
