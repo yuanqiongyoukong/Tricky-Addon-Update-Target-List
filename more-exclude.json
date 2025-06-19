@@ -25,6 +25,10 @@
                     "package-name": "com.rifsxd.ksunext"
                 },
                 {
+                    "name": "SukiSU Ultra",
+                    "package-name": "com.sukisu.ultra"
+                },
+                {
                     "name": "Apatch",
                     "package-name": "me.bmax.apatch"
                 },
@@ -68,6 +72,10 @@
                 {
                     "name": "MMRL",
                     "package-name": "com.dergoogler.mmrl"
+                },
+                {
+                    "name": "WebUI X",
+                    "package-name": "com.dergoogler.mmrl.wx"
                 }
             ]
         },

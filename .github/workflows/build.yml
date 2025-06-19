@@ -114,7 +114,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Set release variables
         id: set_release_variables
@@ -140,6 +140,20 @@ jobs:
           echo "$FORMATTED_RELEASE_NOTES" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
           echo "PRERELEASE=$PRERELEASE" >> $GITHUB_ENV
+
+      - name: Update update.json
+        run: |
+          COMMIT_NUM=$(git rev-list --count HEAD)
+          sed -i "s/\"versionCode\":.*/\"versionCode\": ${COMMIT_NUM},/" update.json
+          sed -i "s/^versionCode=.*/versionCode=${COMMIT_NUM}/" module/module.prop
+
+          git config --global user.email "leecc0503@gmail.com"
+          git config --global user.name "KOWX712"
+          git remote set-url origin "https://${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git"
+
+          git add update.json module/module.prop
+          git commit --amend --no-edit
+          git push --force
 
       - name: Compress module folder
         run: |

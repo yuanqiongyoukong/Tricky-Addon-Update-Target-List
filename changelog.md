@@ -8,6 +8,17 @@ GitHub release: [Tricky Addon: Update Target List](https://github.com/KOWX712/Tr
 Telegram channel: [KOW's Little World](https://t.me/kowchannel)
 
 ## Changelog
+### v4.0
+- **WebUI:** Fixed `Failed to fetch secutiry patch` issue in most condition.
+- **WebUI:** Added support for [qwq233's TrickyStore fork](https://github.com/qwq233/TrickyStore).
+- **WebUI:** Provide option to download latest canary version in about menu.
+- **action:** Removed MMRL from action redirect WebUI since MMRL no longer provide built-in WebUI. (#66, @ThanhCN0)
+- **WebUI:** Unknown keybox option no longer rely on internet connection.
+- **WebUI:** Fixed built-in update mechanism might fail in some condition. (@backslashxx)
+- **WebUI:** Translation service now is avaible on crowdin, view [translation guide](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/blob/main/module/webui/locales/GUIDE.md) for more detail. You can reach our crowdin website in the WebUI langauge menu too.
+- **WebUI:** Added Ukrainian (#43, @StepanSad), Greek (#61, @Goku818) translation.
+- **WebUI:** Updated Japanese, Indonesian, Arabic, Polish, French, Portuguese, Ukrainian translation. (@reindex-ot, @Rem01Gaming, @ZG089, @Bladius2024, @GhostFRR, @SecretGogeta, [crowdin@IlliaS](https://crowdin.com/profile/illias))
+
 ### v3.9
 - **WebUI:** Optmized app loading speed, fixed all known freezing issue.
 - **WebUI:** Added unknown keybox option, similar to AOSP keybox, removed AOSP keybox fallback when no valid keybox available.
