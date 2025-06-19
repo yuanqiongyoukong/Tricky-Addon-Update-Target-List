@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Sistem Tətbiqi Əlavə et</string>
     <string name="help_add_system_app_description">Müəyyən bir sistem tətbiqini tətbiq siyahısına əlavə et.</string>
     <string name="help_set_keybox">AOSP &amp; Etibarlı Keybox təyin et</string>
-    <string name="help_set_keybox_description">Tricky store keybox.xml-ni dəyişdir. Əgər etibarlı keybox yoxdursa, AOSP keybox dəyişdiriləcək. Etibarlı keybox seçimi İnternet bağlantısı tələb edir.</string>
+    <string name="help_set_keybox_description">Tricky store keybox.xml-ni dəyişdir. Etibarlı keybox seçimi İnternet bağlantısı tələb edir.</string>
     <string name="help_set_custom_keybox">Özəl Keybox təyin et</string>
     <string name="help_set_custom_keybox_description">Keybox-u cihaz yaddaşından idxal et. Yalnız xml faylını dəstəkləyir.</string>
     <string name="help_set_security_patch">Təhlükəsizlik Təkmilləşdirməsini təyin et</string>

@@ -18,7 +18,7 @@
     <string name="help_add_system_app">システムアプリを追加</string>
     <string name="help_add_system_app_description">特定のシステムアプリをアプリリストに追加します。</string>
     <string name="help_set_keybox">AOSP と有効な Keybox</string>
-    <string name="help_set_keybox_description">Tricky Store の keybox.xml を置き換えます。有効な Keybox がなくなった場合は、AOSP Keybox に置き換えられます。インターネット接続が必要です。</string>
+    <string name="help_set_keybox_description">Tricky Store の keybox.xml を置き換えます。インターネット接続が必要です。</string>
     <string name="help_set_custom_keybox">カスタム Keybox を設定</string>
     <string name="help_set_custom_keybox_description">デバイスのストレージからカスタム Keybox ファイルをインポートします。インポートは xml ファイルのみ対応しています。</string>
     <string name="help_set_security_patch">セキュリティパッチを設定</string>

@@ -19,7 +19,7 @@
     <string name="help_add_system_app">Dodaj aplikację systemową</string>
     <string name="help_add_system_app_description">Dodaj konkretną aplikację systemową do listy aplikacji.</string>
     <string name="help_set_keybox">Ustaw działający klucz AOSP</string>
-    <string name="help_set_keybox_description">Zastąp klucz keybox.xml. Klucz AOSP zostanie zastosowany, jeśli nie będzie więcej działających kluczy. Funkcja wymaga połączenia internetowego.</string>
+    <string name="help_set_keybox_description">Zastąp klucz keybox.xml. Funkcja wymaga połączenia internetowego.</string>
     <string name="help_set_custom_keybox">Ustaw niestandardowy klucz</string>
     <string name="help_set_custom_keybox_description">Importuj klucz z pamięci urządzenia. Obsługuje tylko pliki xml.</string>
     <string name="help_set_security_patch">Ustaw poprawkę zabezpieczeń</string>

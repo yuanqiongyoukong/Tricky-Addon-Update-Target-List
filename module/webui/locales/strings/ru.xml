@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Добавить системное приложение</string>
     <string name="help_add_system_app_description">Добавить конкретное системное приложение в список приложений.</string>
     <string name="help_set_keybox">Установить AOSP и действующий Keybox</string>
-    <string name="help_set_keybox_description">Замените tricky store keybox.xml. AOSP keybox будет заменен, если не будет найден действующий keybox. Опция с действующим keybox требует подключения к интернету.</string>
+    <string name="help_set_keybox_description">Замените tricky store keybox.xml. Опция с действующим keybox требует подключения к интернету.</string>
     <string name="help_set_custom_keybox">Установить пользовательский Keybox</string>
     <string name="help_set_custom_keybox_description">Импортируйте файл keybox из вашего устройства в хранилище. Поддерживаются только xml файлы.</string>
     <string name="help_set_security_patch">Установить Security Patch</string>

@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Aggiungi App di Sistema</string>
     <string name="help_add_system_app_description">Aggiungi app di sistema specifiche all&apos;elenco delle app.</string>
     <string name="help_set_keybox">Imposta AOSP &amp; Keybox Valida</string>
-    <string name="help_set_keybox_description">Sostituisci tricky store keybox.xml. La keybox AOSP verrà sostituita se non ci sono più keybox valide. L&apos;opzione valida per la keybox richiede una connessione Internet.</string>
+    <string name="help_set_keybox_description">Sostituisci tricky store keybox.xml. L&apos;opzione valida per la keybox richiede una connessione Internet.</string>
     <string name="help_set_custom_keybox">Imposta Keybox Personalizzata</string>
     <string name="help_set_custom_keybox_description">Importa keybox dalla memoria del tuo dispositivo. Supporta solo file xml.</string>
     <string name="help_set_security_patch">Imposta Patch di Sicurezza</string>

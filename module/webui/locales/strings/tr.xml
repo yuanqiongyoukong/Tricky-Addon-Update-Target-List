@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Sistem Uygulaması Ekle</string>
     <string name="help_add_system_app_description">Belirli bir sistem uygulamasını uygulama listesine ekleyin.</string>
     <string name="help_set_keybox">AOSP &amp; Geçerli Keybox Ayarla</string>
-    <string name="help_set_keybox_description">Tricky Store&apos;daki keybox.xml dosyasını değiştirir. Eğer geçerli bir keybox yoksa AOSP keybox ile değiştirilecektir. Geçerli keybox seçeneği internet bağlantısı gerektirir.</string>
+    <string name="help_set_keybox_description">Tricky Store&apos;daki keybox.xml dosyasını değiştirir. Geçerli keybox seçeneği internet bağlantısı gerektirir.</string>
     <string name="help_set_custom_keybox">Özel Keybox Ayarla</string>
     <string name="help_set_custom_keybox_description">Cihaz depolamasından bir keybox dosyasını içe aktarın. Sadece xml dosyaları desteklenir.</string>
     <string name="help_set_security_patch">Güvenlik Yaması Ayarla</string>

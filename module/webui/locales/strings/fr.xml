@@ -19,7 +19,7 @@
     <string name="help_add_system_app">Ajouter une application système</string>
     <string name="help_add_system_app_description">Ajouter une application système spécifique à la liste.</string>
     <string name="help_set_keybox">Définir une Keybox AOSP &amp; Valide</string>
-    <string name="help_set_keybox_description">Remplacer le fichier keybox.xml de Tricky Store. La keybox AOSP sera remplacée s&apos;il n&apos;y a plus de keybox valide. L&apos;option keybox valide nécessite une connexion Internet.</string>
+    <string name="help_set_keybox_description">Remplacer le fichier keybox.xml de Tricky Store. L&apos;option keybox valide nécessite une connexion Internet.</string>
     <string name="help_set_custom_keybox">Définir une Keybox personnalisée</string>
     <string name="help_set_custom_keybox_description">Importer une keybox depuis le stockage de votre appareil. Seuls les fichiers XML sont pris en charge.</string>
     <string name="help_set_security_patch">Définir le patch de sécurité</string>

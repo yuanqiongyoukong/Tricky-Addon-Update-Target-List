@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Додати системний застосунок</string>
     <string name="help_add_system_app_description">Додати конкретний системний застосунок до списку.</string>
     <string name="help_set_keybox">Встановити AOSP та валідний ключ</string>
-    <string name="help_set_keybox_description">Замінити tricky store keybox.xml. Ключа буде замінено на AOSP, якщо не буде валідного. Для використання валідного ключа потрібне з&apos;єднання з інтернетом.</string>
+    <string name="help_set_keybox_description">Замінити tricky store keybox.xml. Для використання валідного ключа потрібне з&apos;єднання з інтернетом.</string>
     <string name="help_set_custom_keybox">Встановити власний ключ</string>
     <string name="help_set_custom_keybox_description">Імпортувати ключі зі сховища вашого пристрою. Підтримуються лише xml файли.</string>
     <string name="help_set_security_patch">Встановити патч безпеки</string>

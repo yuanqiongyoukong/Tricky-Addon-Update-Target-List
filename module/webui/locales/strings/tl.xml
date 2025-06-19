@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Magdagdag ng System App</string>
     <string name="help_add_system_app_description">Magdagdag ng tiyak na system app sa listahan ng apps.</string>
     <string name="help_set_keybox">I-set ang AOSP at Valid Keybox</string>
-    <string name="help_set_keybox_description">Palitan ang tricky store keybox. Palitan ang AOSP keybox kung walang valid keybox. Nangangailangan ng koneksyon sa internet ang valid keybox option.</string>
+    <string name="help_set_keybox_description">Palitan ang tricky store keybox. Nangangailangan ng koneksyon sa internet ang valid keybox option.</string>
     <string name="help_set_custom_keybox">I-set ang Custom Keybox</string>
     <string name="help_set_custom_keybox_description">Mag-import ng custom keybox mula sa iyong device storage. Sumusuporta lamang ng xml file.</string>
     <string name="help_set_security_patch">I-set ang Security Patch</string>

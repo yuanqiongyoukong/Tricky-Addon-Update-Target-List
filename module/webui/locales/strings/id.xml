@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Tambahkan Aplikasi Sistem</string>
     <string name="help_add_system_app_description">Tambahkan aplikasi sistem tertentu ke daftar aplikasi.</string>
     <string name="help_set_keybox">Ganti Keybox AOSP &amp; Valid</string>
-    <string name="help_set_keybox_description">Ganti file keybox.xml bawaan. Jika tidak ada keybox valid, maka keybox AOSP akan digunakan. Opsi ini memerlukan koneksi internet.</string>
+    <string name="help_set_keybox_description">Ganti file keybox.xml bawaan. Opsi ini memerlukan koneksi internet.</string>
     <string name="help_set_custom_keybox">Gunakan Keybox Kustom</string>
     <string name="help_set_custom_keybox_description">Impor keybox dari penyimpanan perangkat. Hanya mendukung file XML.</string>
     <string name="help_set_security_patch">Atur Patch Keamanan</string>

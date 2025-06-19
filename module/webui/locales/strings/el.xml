@@ -18,7 +18,7 @@
     <string name="help_add_system_app">Πρόσθεσε Εφαρμογή Συστήματος</string>
     <string name="help_add_system_app_description">Πρόσθεσε συγκεκριμένη εφαρμογή συστήματος στη λίστα εφαρμογών.</string>
     <string name="help_set_keybox">Όρισε AOSP &amp; Έγκυρο Keybox</string>
-    <string name="help_set_keybox_description">Αντικατέστησε το tricky store keybox.xml. Το AOSP keybox θα αντικατασταθεί αν δεν υπάρχει έγκυρο keybox. Η επιλογή valid keybox απαιτεί σύνδεση Internet.</string>
+    <string name="help_set_keybox_description">Αντικατέστησε το tricky store keybox.xml. Η επιλογή valid keybox απαιτεί σύνδεση Internet.</string>
     <string name="help_set_custom_keybox">Όρισε Custom Keybox</string>
     <string name="help_set_custom_keybox_description">Εισήγαγε keybox από τη συσκευή σου. Υποστηρίζεται μόνο αρχείο xml.</string>
     <string name="help_set_security_patch">Όρισε Security Patch</string>

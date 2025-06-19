@@ -19,7 +19,7 @@
     <string name="help_add_system_app">添加系統應用</string>
     <string name="help_add_system_app_description">添加特定系統應用到應用列表。</string>
     <string name="help_set_keybox">設置 AOSP &amp; 有效密鑰</string>
-    <string name="help_set_keybox_description">替換 Tricky Store 的密鑰（keybox.xml）。如果沒有有效密鑰，將替換為 AOSP 密鑰。有效密鑰選項需連網使用。</string>
+    <string name="help_set_keybox_description">替換 Tricky Store 的密鑰（keybox.xml）。有效密鑰選項需連網使用，不保證能一直提供。</string>
     <string name="help_set_custom_keybox">設置自定義密鑰</string>
     <string name="help_set_custom_keybox_description">從設備存儲導入自定義密鑰。僅支持 xml 文件。</string>
     <string name="help_set_security_patch">設置安全補丁</string>

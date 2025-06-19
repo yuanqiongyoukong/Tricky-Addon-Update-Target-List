@@ -19,7 +19,7 @@
     <string name="help_add_system_app">Add System App</string>
     <string name="help_add_system_app_description">Add specific system app to app list.</string>
     <string name="help_set_keybox">Set AOSP &amp; Valid Keybox</string>
-    <string name="help_set_keybox_description">Replace tricky store keybox.xml. AOSP keybox will be replaced if there\'s no more valid keybox. Valid keybox option requires Internet connection.</string>
+    <string name="help_set_keybox_description">Replace tricky store keybox.xml. Valid keybox option requires Internet connection and not always available.</string>
     <string name="help_set_custom_keybox">Set Custom Keybox</string>
     <string name="help_set_custom_keybox_description">Import keybox from your device storage. Only support xml file.</string>
     <string name="help_set_security_patch">Set Security Patch</string>
