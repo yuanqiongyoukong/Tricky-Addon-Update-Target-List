@@ -44,40 +44,47 @@ document.getElementById('github').addEventListener('click', () => {
 });
 
 // Update to latest canary verison
-document.getElementById('canary').addEventListener('click', async () => {
+document.getElementById('canary').addEventListener('click', () => {
     if (isDownloading) return;
     isDownloading = true;
-    try {
-        showPrompt("prompt_checking_update", true, 10000);
-        const url = "https://api.allorigins.win/raw?url=" + encodeURIComponent("https://nightly.link/KOWX712/Tricky-Addon-Update-Target-List/workflows/build/main?preview");
-        const response = await fetch(url);
-        const html = await response.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-        const zipURL = doc.querySelector('a[href$=".zip"]')?.href;
 
-        if (zipURL) {
-            // Extract versionCode
-            const parts = zipURL.split("-");
-            const version = parts.length >= 2 ? parts[parts.length - 2] : null;
+    showPrompt("prompt_checking_update", true, 10000);
+    let htmlContent = '';
+    const link = "https://nightly.link/KOWX712/Tricky-Addon-Update-Target-List/workflows/build/main?preview"
+    const output = spawn('sh', [`${basePath}/common/get_extra.sh`, '--download', `${link}`],
+                    { env: { PATH: "$PATH:/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk" } });
+    output.stdout.on('data', (data) => {
+        htmlContent += data;
+    });
+    output.on('exit', async (code) => {
+        if (code === 0) {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlContent, "text/html");
+            const zipURL = doc.querySelector('a[href$=".zip"]')?.href;
 
-            // Check local version
-            const output = spawn('sh', [`${basePath}/common/get_extra.sh`, '--check-update', `${version}`], { env: { CANARY: "true" } });
-            output.on('exit', (code) => {
-                if (code === 0) {
-                    showPrompt("prompt_no_update");
-                    isDownloading = false;
-                } else if (code === 1) {
-                    downloadUpdate(zipURL);
-                }
-            });
+            if (zipURL) {
+                // Extract versionCode
+                const parts = zipURL.split("-");
+                const version = parts.length >= 2 ? parts[parts.length - 2] : null;
+
+                // Check local version
+                const output = spawn('sh', [`${basePath}/common/get_extra.sh`, '--check-update', `${version}`], { env: { CANARY: "true" } });
+                output.on('exit', (code) => {
+                    if (code === 0) {
+                        showPrompt("prompt_no_update");
+                        isDownloading = false;
+                    } else if (code === 1) {
+                        downloadUpdate(zipURL);
+                    }
+                });
+            } else {
+                console.error("No link found.");
+            }
         } else {
-            console.error("No link found.");
+            console.error("Error fetching ZIP link");
+            isDownloading = false;
         }
-    } catch (error) {
-        console.error("Error fetching ZIP link:", error);
-        isDownloading = false;
-    }
+    });
 });
 
 /**
@@ -86,7 +93,7 @@ document.getElementById('canary').addEventListener('click', async () => {
  * @returns {void}
  */
 function downloadUpdate(link) {
-    showPrompt("prompt_downloading", true, 10000);
+    showPrompt("prompt_downloading", true, 20000);
     const download = spawn('sh', [`${basePath}/common/get_extra.sh`, '--get-update', `${link}`],
                         { env: { PATH: "$PATH:/data/adb/ap/bin:/data/adb/ksu/bin:/data/adb/magisk:/data/data/com.termux/files/usr/bin" } });
     download.on('exit', (code) => {

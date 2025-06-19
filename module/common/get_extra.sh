@@ -225,6 +225,11 @@ KEYBOX_EOF
 }
 
 case "$1" in
+--download)
+    shift
+    download $@
+    exit
+    ;;
 --xposed)
     get_xposed
     exit
