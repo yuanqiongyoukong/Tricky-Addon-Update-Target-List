@@ -79,7 +79,7 @@
     <string name="prompt_save_error">Failed to save config</string>
     <string name="prompt_uninstall_prompt">WebUI will be removed after reboot</string>
     <string name="prompt_uninstall_failed">Failed to uninstall WebUI</string>
-    <string name="prompt_checking_update">Checking udpate...</string>
+    <string name="prompt_checking_update">Checking update...</string>
     <string name="prompt_new_update">A new update is available!</string>
     <string name="prompt_no_update">There are currently no updates available</string>
     <string name="prompt_downloading">Downloading new update...</string>
