@@ -32,12 +32,19 @@ export async function fetchAppList() {
         });
 
     // Fetch cached applist
-    const response = await fetch('applist.json');
-    const appList = await response.json();
-    const appNameMap = appList.reduce((map, app) => {
-        map[app.package_name] = app.app_name;
-        return map;
-    }, {});
+    let appList = [], appNameMap = {};
+    try {
+        const response = await fetch('applist.json');
+        appList = await response.json();
+        appNameMap = appList.reduce((map, app) => {
+            map[app.package_name] = app.app_name;
+            return map;
+        }, {});
+    } catch (error) {
+        console.warn("Failed to fetch applist.json:", error);
+        appList = [];
+        appNameMap = {};
+    }
 
     // Get installed packages
     let appEntries = [], installedPackages = [];
