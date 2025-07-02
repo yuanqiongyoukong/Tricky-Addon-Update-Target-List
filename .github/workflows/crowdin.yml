@@ -21,7 +21,6 @@ jobs:
       with:
         upload_sources: true
         upload_translations: true
-        auto_approve_imported: true
         download_translations: true
         skip_untranslated_files: false
         skip_untranslated_strings: true
