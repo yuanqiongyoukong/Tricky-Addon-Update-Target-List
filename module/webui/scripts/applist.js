@@ -48,10 +48,13 @@ export async function fetchAppList() {
 
     // Get installed packages
     let appEntries = [], installedPackages = [];
-    const output = spawn('sh', [`${basePath}/common/get_extra.sh`, '--applist']);
+    const output = spawn('sh', [`${basePath}/common/get_extra.sh`, '--applist'], { cwd: "/data/local/tmp" });
     output.stdout.on('data', (data) => {
         if (data.trim() === "") return;
         installedPackages.push(data);
+    });
+    output.stderr.on('data', (data) => {
+        console.error("Error fetching applist: ", data);
     });
     output.on('exit', async () => {
         // Create appEntries array contain { appName, packageName }
